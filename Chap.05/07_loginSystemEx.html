@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+</head>
+<body>
+    <h1>회원 가입을 환영합니다.</h1>
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+            <li>
+                <label for="user_id">아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                <input type="text" id="user_id" size="33" autofocus placeholder="4자~10자 사이, 공백없이" required>
+            </li>
+            <li>
+                <label for="user_email">이메일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                <input type="email" id="user_emai" size="33">
+            </li>
+            <li>
+                <label for="user_pw">비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                <input type="password" id="user_pw" size="33" placeholder="문자와 숫자, 특수 기호 포함" required>
+            </li>
+            <li>
+                <label for="user_pwf">비밀번호 확인&nbsp;</label> 
+                <input type="password" id="user_pwf" size="33">
+            </li>
+            <li>
+                <label for="prod1">가입 경로&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                <select id="prod1">
+                    <option value="blog" selected>블로그</option>
+                    <option value="search">검색</option>
+                    <option value="sns">SNS</option>
+                    <option value="etc">기타</option>
+                </select>
+            </li>
+            <li>
+                <label for="memo">메모</label> 
+                <br>
+                <textarea id="memo" cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+            </li>
+        </ul>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name="mailing" id="mailing_yes">
+        <label for="mailing_yes"> 메일 수신</label></li>
+        <label><input type="radio" name="mailing" id="mailing_no" checked>
+        <label for="mailing_no"> 메일 수신 안 함</label></li>
+    </fieldset>
+    <br>
+    <div id="buttons">
+        <input type="submit" value="가입하기">
+        <input type="submit" value="취소">
+    </div>
+</body>
+</html>

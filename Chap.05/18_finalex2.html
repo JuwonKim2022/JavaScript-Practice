@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>5.2 트런트엔드 개발자 지원서</title>
+    <style>
+        .button{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <div>
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, Javascript에 대한 기술적 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+            <hr color="gray"> 
+        </div>
+        <form>
+            <dl>
+                <dt><b>개인 정보</b></dt>
+                <br>
+                <dd>
+                    <label for="user_name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</label> 
+                    <input type="text" id="user_id" size="33" autofocus placeholder="공백 없이 입력하세요." required>
+                </dd>
+                <br>
+                <dd>
+                    <label for="user_tel">연 락 처</label> 
+                    <input type="tel" id="user_tel" size="33" required>
+                </dd>
+                <br>
+                <br>
+                <br>
+                <dt><b>지원 분야</b></dt>
+                <br>
+                <dd><button type="w_pub">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;웹 퍼블리싱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></dd>
+                <br>
+                <dd><button type="w_dev">웹 어플리케이션 개발</button></dd>
+                <br>
+                <dd><button type="w_env">&nbsp;&nbsp;&nbsp;&nbsp;개발 환경 개선&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></dd>
+                <br>
+                <br>
+                <br>
+                <dt><b>지원 동기</b></dt>
+                <dd>
+                    <label for="memo"></label> 
+                    <br>
+                    <textarea id="memo" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>    
+                </dd> 
+            </dl>
+            
+        </form>
+        <div id="buttons">
+            <input type="submit" value="접수하기">
+            <input type="submit" value="다시 쓰기">
+        </div>
+</body>
+</html>
