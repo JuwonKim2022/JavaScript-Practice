@@ -1,0 +1,13 @@
+h1{
+    display: inline-block;
+    font-size: 1.8em;
+    background-color: black ;
+    color: aliceblue;
+    padding: 13px;
+}
+li{
+    color: blue;
+}
+.list{
+    list-style: none;
+}
