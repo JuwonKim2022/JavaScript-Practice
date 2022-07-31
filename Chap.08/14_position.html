@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>불릿과 번호 바꾸기</title>
+    <style>
+        p{
+            width: 500px;
+            height: 200px;
+            background-color: rgb(220, 219, 219);
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        #static{
+            position: static;
+        }
+        #relative-1{
+            position: relative;
+        }
+        #relative-2{
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        #fixed{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(93, 17, 17);
+            position: fixed;
+            right: 40px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p id="static">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim, esse, veniam quibusdam nihil sapiente harum ex itaque quam ut doloremque error molestiae provident exercitationem odio asperiores? Voluptates, distinctio sint!</p>
+    <p id="relative-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolore harum dolor laborum at commodi distinctio esse dolorum odio nihil a, ipsum cum autem repellendus magnam debitis mollitia reprehenderit eligendi?</p>
+    <p id="relative-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In numquam cupiditate minus magni quia. Impedit optio, libero reprehenderit sequi, vitae deserunt dolor ratione velit, atque sapiente maxime illum fugit quia!</p>
+    <p id="fixed"></p>
+</body>
+</html>
