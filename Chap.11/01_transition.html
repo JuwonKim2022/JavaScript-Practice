@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+        .box{
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px;
+            transition-property: width, heigh;
+            transition-duration: 2s 1s;
+        }
+        .box:hover{
+            width: 200px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
