@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Latout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #wrapper{
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+        .box{
+            padding: 15px;
+            color: bisque;
+            font-weight: bold;
+            text-align: center;
+        }
+        .box1{
+            background-color: rgb(172, 114, 28);
+            grid-column: 1/4;
+        }
+        .box2{
+            background-color: rgb(35, 227, 61);
+            grid-column: 2/4;
+            grid-column: 1/2;
+        }
+        .box3{
+            background-color: rgb(227, 44, 83);
+            grid-column: 2/4;
+            grid-row-start: 2;
+        }
+        .box4{
+            background-color: rgb(33, 115, 173);
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>

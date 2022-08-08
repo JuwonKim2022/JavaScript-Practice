@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Latout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #wrapper1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        #wrapper2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        .items{
+            padding: 15px;
+            background-color: bisque;
+        }
+        .items:nth-child(odd){
+            background-color: rgb(115, 86, 43);
+        }
+    </style>
+</head>
+<body>
+    <h1>auto-fit일 때</h1>
+    <div id="wrapper1">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolorum magni perferendis. Eos temporibus natus, repellat illo vero necessitatibus amet tempore enim itaque aliquam sit distinctio dicta similique debitis magnam?</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam dicta corrupti autem praesentium blanditiis vero et, inventore fuga neque in harum? Incidunt nobis, laborum voluptatibus molestiae perferendis perspiciatis voluptas!</div>
+        <div class="items">Lorem, ipsum dolor sit t quia, saepe placeat delectus autem commodi quis laboriosam magnam rem odit rerum mollitia cupiditate provident nostrum.</div>
+        <div class="items">Lorem ipsummolestiae veritatis at laudantium eveniet? Eaque, blanditiis vero delectus facilis accusamus quasi quisquam? Id porro nesciunt totam!</div>
+        <div class="items">LoLo</div>
+        <div class="items">Lorem ipsures impedit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enim est amet repudiandae voluptatum esse pariatur dolorem error rerum, voluptates exercitationem.</div>
+    </div>
+    <h1>auto-fill일 때</h1>
+    <div id="wrapper2">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolorum magni perferendis. Eos temporibus natus, repellat illo vero necessitatibus amet tempore enim itaque aliquam sit distinctio dicta similique debitis magnam?</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam dicta corrupti autem praesentium blanditiis vero et, inventore fuga neque in harum? Incidunt nobis, laborum voluptatibus molestiae perferendis perspiciatis voluptas!</div>
+        <div class="items">Lorem, ipsum dolor sit t quia, saepe placeat delectus autem commodi quis laboriosam magnam rem odit rerum mollitia cupiditate provident nostrum.</div>
+        <div class="items">Lorem ipsummolestiae veritatis at laudantium eveniet? Eaque, blanditiis vero delectus facilis accusamus quasi quisquam? Id porro nesciunt totam!</div>
+        <div class="items">LoLo</div>
+        <div class="items">Lorem ipsures impedit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enit in non beatae asperiores velit enim est amet repudiandae voluptatum esse pariatur dolorem error rerum, voluptates exercitationem.</div>
+    </div>
+</body>
+</html>

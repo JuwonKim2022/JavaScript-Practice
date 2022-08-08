@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: antiquewhite;
+	font-size: 16px;
+}
+#wrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap:1rem;
+}
+.card{
+	background-color: rgb(207, 168, 107);
+	box-shadow: 4px 4px 5px rgb(62, 40, 19);
+}
+.card>header{
+	font-size: 1.5rem;
+	padding: 01.5rem;
+}
+.card>p{
+	padding: 0.5rem;
+	line-height: 1.6rem;
+}
+.card>img{
+	max-width: 100%;
+}
+.cup{
+	width: 250px;
+	height: 163px;
+	box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
