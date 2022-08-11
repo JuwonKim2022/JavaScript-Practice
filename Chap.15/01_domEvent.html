@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>자바스크립트 이벤트</title>
+    <link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+    <button id="change">글자색 바꾸기</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit, illum et, eius perferendis neque iusto dicta alias in facere dolorum maxime voluptatem esse reiciendis tempora ipsam magnam! Placeat, assumenda?</p>
+
+    <script>
+        //방법1
+        var changeBttn = document.querySelector("#change");
+        changeBttn.onclick = changeColor;
+
+        function changeColor(){
+            document.querySelector("p").style.color = "#f00";
+        }
+
+        //방법2
+        document.querySelector("#change").onclick = changeColor;
+
+        function changeColor(){
+            document.querySelector("p").style.color = "#f00";
+        }    
+
+        //방법3
+        document.querySelector("#change").onclick = function(){
+            document.querySelector("p").style.color = "#f00";
+        };    
+
+    </script>
+</body>
+</html>
