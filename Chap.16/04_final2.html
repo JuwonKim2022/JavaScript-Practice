@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>현재 시간 팝업창</title>
+    <style>
+        #container{
+            width: 200px;
+            margin: 50px auto;
+        }
+        button{
+            border: 1px solid rgb(210, 68, 68);
+            background: rgb(234, 199, 199);
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <Div id="container">
+        <button id="btn">현재 시간 보기</button>
+    </Div>
+   
+    <script>
+        document.getElementById('btn').onclick = displayTime;
+
+        function displayTime(){
+            var left = (screen.availWidth - 400) / 2;
+            var top = (screen.availHeight - 200) / 2;
+            var opt = "left=" + left + ", top=" + ", width=" + ", height=" + 200;
+            window.open("03_final1.html", "", opt)
+        }
+    </script>
+</body>
+</html>
