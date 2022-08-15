@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <form action="memberServer.php">
+        <h1>레드향 주문하기</h1>
+        <fieldset>
+            <legend>개정 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-id">아이디 (한 줄짜리 일반 텍스트 입력)</label>
+                    <input type="text" id="user-id" size="30" placeholder="영어만 입력하세요." maxlength="15" autofocus required>
+                </li>
+                <li>
+                    <label for="user-pw">비밀번호 (입력 문자 가려서 표시)</label>
+                    <input type="password" id="user-pw" size="30" maxlength="20" required>
+                </li>
+                <li>
+                    <label for="user-mail">메일 주소</label>
+                    <input type="email" id="user-mail">
+                </li>
+                <li>
+                    <label for="user-add">배송 주소</label>
+                    <input type="text" id="user-add" size="70" >
+                </li>
+                <li>
+                    <label for="user-tel">전화번호</label>
+                    <input type="tel" id="user-tel">
+                </li>
+                <li>
+                    <label for="search">검색창</label>
+                    <input type="search" id="search" value="이 곳에서 검색하시오." readonly>
+                </li>
+                <li>
+                    <label for="url">URL 주소 입력</label>
+                    <input type="url" id="url">
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <br>
+                    <textarea id="memo" cols="70" rows="10"></textarea>
+                </li>
+            </ul> 
+        </fieldset>
+        <fieldset>
+            <legend>선택문</legend>
+            <ul>
+                <li>
+                    <p>주문할 상품을 선택해 주세요.</p>
+                    <label><input type="checkbox" value="snack" checked>과자</label>
+                    <label><input type="checkbox" value="drink">음료</label>
+                    <label><input type="checkbox" value="bread">제과</label>
+                </li>
+                <li>
+                    <p>포장을 선택해 주세요.</p>
+                    <label><input type="radio" name="gift" value="yes">선물 포장</label>
+                    <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+                    
+                </li>
+                <li>
+                    <label for="tissue">휴지 선택 (드롭 다운 목록)</label>
+                    <select id="tissue">
+                        <option value="red_tissue" selected>빨간 휴지</option>
+                        <option value="green_tissue">녹색 휴지</option>
+                        <option value="blue_tissue">파란 휴지</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="pack">포장 여부 (데이터 목록)</label>
+                    <input type="text" id="pack" list="sel">
+                    <datalist id="sel">
+                        <option value="red_tissue" selected>빨간 휴지</option>
+                        <option value="green_tissue">녹색 휴지</option>
+                        <option value="blue_tissue">파란 휴지</option>
+                    </datalist>
+                </li>
+            </ul> 
+        </fieldset>
+        <fieldset>
+            <legend>숫자 조절 박스</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox" value="snack">과자</label>
+                    <input type="number" min="1" max="10">개 (최소 1개))     
+                </li>
+                <li>
+                    <label><input type="checkbox" value="drink">음료</label>
+                    <input type="range" min="0" max="100" value="50">개
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>날짜 관련</legend>
+            <ul>
+                <li>
+                    <label for="date">날짜 입력</label>
+                    <input type="date" id="date" min="2020-01-01" max="2022-12-31" value="2022-08-03">
+                </li>
+                <li>
+                    <label for="date-month">날짜 입력(월)</label>
+                    <input type="month" id="date-month" min="2021-05" max="2022-08">
+                </li>
+                <li>
+                    <label for="date-week">날짜 입력(주)</label>
+                    <input type="week" id="date-week">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>시간 관련</legend>
+            <ul>
+                <li>
+                    <label for="time">시간</label>
+                    <input type="time" id="time">
+                </li>
+                <li>
+                    <label for="date-time">국제시간</label>
+                    <input type="datetime" id="date-time">
+                </li>
+                <li>
+                    <label for="date-timel">국제시간(사용자 지역)</label>
+                    <input type="datetime-local" id="date-timel">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <input type="submit"value="가입하기"><input type="reset" value="리셋">
+                </li>
+                <li>
+                    <button type="submit">가입하기</button><button type="reset">취소하기</button>
+                </li>
+                <li>
+                    <input type="image" src="images/book.png" alt="로그인">
+                </li>
+                <li>
+                    <label for="btn">일반 버튼 (자바 스크립트 실행)</label>
+                    <input type="button" id="btn" value="자바스크립트로 연결!" onclick="window.open('01_basic.html')">
+                </li>
+                <li><label for="fil">파일 첨부 버튼</label>
+                    <br>
+                    <input type="file" id="fil">
+                </li>
+                <li>
+                    <input type="hidden" name="히든 정보" value="사이트를 통해 직접 로그인">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
