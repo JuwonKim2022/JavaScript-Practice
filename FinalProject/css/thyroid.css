@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Oleo+Script+Swash+Caps&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: rgb(180, 212, 244);
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#container{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(180, 212, 244);
+}
+#logo{
+	float: left;
+	width: 250px;
+	height: 100px;
+	padding-left: 15px;
+}
+#logo h1{
+	font-family: 'Nanum Pen Script', cursive;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-weight: 700;
+	font-size: 65px;
+	color: rgb(33, 34, 32);
+	text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+nav{
+	float: right;
+	width: 900px;
+	height: 100px;
+	padding-top: 40px;
+}
+#topMenu{
+	height: 60px;
+}
+#topMenu > li {
+	float: left;
+	position: relative;
+}
+#topMenu > li > a{
+	display: block;
+	color: rgb(0, 0, 0);
+	font-weight: 900;
+	font-size: large;
+	text-shadow: 0 2px #07c;
+	padding: 18px 50px;
+}
+#topMenu > li > a > span{
+	font-size: 0.8em;
+}
+#topMenu > li > a:hover{
+	color: rgb(252, 246, 51);
+	text-shadow: 0 -2px #07c;
+}
+#topMenu > li > ul{
+	display: none;
+	position: absolute;
+	width: 160px;
+	background-color: rgba(255, 255, 255, 0.773);
+	left: 10px;
+	margin: 0;
+}
+#topMenu > li > ul > li{
+	padding: 10px 10px 10px 30px;
+}
+#topMenu > li > ul > li > a{
+	font-size: 14px;
+	padding: 10px;
+	color: #000;
+}
+#topMenu > li:hover > ul{
+	display: block;
+	z-index: 10;
+}
+#topMenu > li > ul > li > a:hover{
+	color: #f00;
+}
+
+
+
+#menu{
+	width: 100%;
+	height: 450px;
+	background-color: rgb(180, 212, 244);
+}
+
+#radioCheck{
+	text-align: center;
+	margin: auto;
+	width: 900px;
+}
+.book{
+	scroll-behavior: smooth;
+	display: block;
+	text-align: center;
+	margin: auto;
+	overflow-y: scroll;
+	width: 700px;
+	height: 430px;
+}
+.book::-webkit-scrollbar{
+	display: none;
+}
+#page01{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page02{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page03{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page04{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page05{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page06{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page07{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page08{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page09{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page10{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page11{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page12{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+#page13{
+	height: 100%;
+	padding-top: 20px;
+	background-color: 180, 212, 244;
+}
+
+
+
+#slideShow{
+	clear: both;
+	width: 100%;
+	height: 70px;
+	background-color: rgb(249, 207, 129);
+	overflow: hidden;
+}
+footer{
+	width: 100%;
+	height:75px;
+	background-color: rgb(180, 212, 244);
+}
+#bottomMenu{
+	width: 100%;
+	height: 20px;
+	position: relative;
+}
+#bottomMenu ul{
+	margin-top: 11px;
+}
+#bottomMenu ul li{
+	float: left;
+	padding: 3px 20px;
+	border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+	border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+}
+#sns{
+	position: absolute;
+	right: 0;
+}
+#sns ul li{
+	border: none;
+	padding: 5px;
+}
+#company{
+	clear: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+p{
+	font-size: 14px;
+	color: rgb(0, 0, 0);
+}
