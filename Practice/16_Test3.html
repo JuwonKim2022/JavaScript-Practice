@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Test3</title>
+    <style>
+        
+        div{
+            padding: 10px;
+        }
+        #signup{
+            border: 0ch;
+            background-color: rgb(175, 225, 186);
+            color: green;
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form name="login">
+        <div>
+            <label>아이디 <input id="id" type="text" name="id"></label>
+        </div>
+        <div>
+            <label>패스워드 <input id="pw" type="password" name="pw" onclick="alert('영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자')"></label>
+        </div>
+        <div>
+            <label>패스워드 확인 <input id="pw_check" type="password" name="pw_check"></label>
+        </div>
+        <div>
+            <label>이메일 <input id="mail" type="email" size="10"></label> @ <input id="mail" type="email"></label> 
+        </div>
+        <div>
+            <label>주소 <input id="address" type="text" size="35"></label>
+        </div>
+        <div>
+            <label><input id="signup" type="button" value="가 입"></label>
+        </div>
+    </form>
+    
+    <script>
+        function login(){
+            var login = document.login;
+            var id = login.id.value;
+            var pw = login.pw.value;
+            var pw_check = login.pw_check.value;
+
+            if(!id || pw || pw_check){
+                alert("필수 입력 항목 입니다.")
+            }else{
+                login.submit();
+            }
+        }
+    </script>
+</body>
+</html>

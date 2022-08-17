@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Test2</title>
+    <style>
+        .long{
+            width: 400px;
+        }
+        .long2{
+            width: 100px;
+        }
+        .long3{
+            width: 150px;
+        }
+        .short{
+            width: 28px;
+            height: 10px;
+        }
+        thead, tfoot {
+            background-color: rgb(232, 139, 93) !important;
+            color: white;
+            text-align: center;
+        }
+        table {
+            border: 1px solid black;
+            border-spacing: 2px;
+            background-color: rgb(252, 241, 208);
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            border-spacing: 10px;  
+            height: 10px;
+        }
+        tr{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th colspan="2" id="title">제목</th>
+                <th class="long2">작성자</th>
+                <th class="long3">작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9</td>
+                <td class="long">공지사항 제목 9</td>
+                <td><input type="button" value="바로가기"></td>
+                <td>user1</td>
+                <td>2021-03-29</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="long">공지사항 제목 6</td>
+                <td><input type="button" value="바로가기"></td>
+                <td>answ445</td>
+                <td>2021-03-12</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="long">공지사항 제목 3</td>
+                <td><input type="button" value="바로가기"></td>
+                <td>testg12</td>
+                <td>2021-03-01</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="long">공지사항 제목 2</td>
+                <td><input type="button" value="바로가기"></td>
+                <td>palwe3</td>
+                <td>2021-01-02</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="long">공지사항 제목 1</td>
+                <td><input type="button" value="바로가기"></td>
+                <td>xml23</td>
+                <td>2020-12-24</td>
+                <td>124</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">전체공지사항 갯수</td>
+                <td colspan="2">5개</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
