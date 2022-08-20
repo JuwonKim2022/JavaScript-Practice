@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vol1TestWeb.css">
+    <style>
+       
+       * {
+   font-family: 'Noto Sans KR', sans-serif;
+   list-style: none;
+   text-decoration: none;
+   margin: 0px;
+   padding: 0px;
+   color: #000;
+}
+        .head{
+            width: 1024px;
+            background:rgb(117, 117, 125) ;
+            margin: auto auto;
+
+       }
+                 
+    
+        .nav{
+            background-color: rgb(255, 255, 255);
+width: 100%;
+margin: auto auto;
+           display:flex;
+           height: 60px;
+           margin-top: -60px;
+           
+        }
+        .nav > .ul2{
+          
+           display:flex;
+           
+          
+        }
+
+
+    .ul2 > li{
+        
+       font-size: 18px;
+        color: rgb(0, 0, 0);
+        margin: 0px 10px;
+        font-family: 'Nanum Pen Script', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+    }
+    /* .ul1{
+
+    } */
+    .ul1 > li >img {
+        margin-top: -15px;
+    }
+
+
+
+.main{
+    background-color: red;
+    width: 1024px;
+    height: 1000px;
+    margin: auto auto;
+}
+.foot{
+    width: 1024px;
+    height: 50px;
+    background: blue;
+    margin: auto auto;
+}   
+.ul2 > li{
+    display: inline-block;
+   
+ 
+    width: 110px;
+    height: 100px;
+    text-align: center;
+    vertical-align: text-top;   text-align: center;
+  
+}
+.ul2 > li >a {
+    display: block;
+    color: aqua;
+    color: inherit;   text-align: center;
+  
+}
+.ul2{
+   
+    justify-content: flex-end;
+
+}
+.l2{
+    display: none;
+    background: rgba(153, 65, 65, 0);
+    background-color: aliceblue;
+
+  
+}
+
+.ul2 >li:hover > a{
+    background: rgb(248, 170, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.ul2 >li:hover > .l2{
+    display: block;   text-align: center;
+}
+.l2 > li{
+    height: 100%;
+   margin-left: 0px;   text-align: center;
+  
+}
+.l2 > ul{
+    position: absolute;
+    left: 0px;
+}
+.l2 > li >a {
+    color: rgb(255, 238, 0);
+    display: block;
+    font-size: 50px;   text-align: center;
+    
+   
+}
+.l2 a:hover{
+    text-decoration: underline;
+    background: rgb(0, 0, 0);
+color: rgb(126, 82, 0);   text-align: center;
+}
+/* .l1> li :hover > a{ 
+background: rgb(148, 139, 139);
+color: rgb(237, 189, 101);
+} */
+.l2 a{
+    display: block;
+    padding: 50px;   text-align: center;
+}
+.tail_group_main {
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+    align-items: center;   text-align: center;
+} 
+
+ .search_area{
+    width: calc(1024px-300px);
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    /* background: blue; */
+    line-height: 40px;
+    border-radius: 5px;
+    
+ }
+
+    </style>
+</head>
+<body>
+        <div class="head">
+            <div class="search_area">
+                <form>
+                <input type="search" placeholder="검색">
+                <span>검색</span>&nbsp&nbsp
+                </form>
+                <div class="login"><span>&nbsp<a haef="#">로그인</a>&nbsp<a haef="#">회원가입</a></span></div>
+                
+            </div>
+            <div class="nav">
+                <ul class="ul1">
+                    <li > <img src="images/lo1.png" width="150px"></li>
+                </ul>                     
+                <ul class="ul2">
+                    <li >        <a href="#">지도상권분석</a>
+                        <ul class="l2">
+                          
+                        </ul></li>
+                    <li>  <a href="#">지역 상권 분석</a>
+                        <ul class="l2">
+                            <li>지역현황분석</li>
+                            <li>상권현황분석</li>
+                          
+                        </ul>
+                    </li>
+                
+                    <li> <a href="#">마이페이지</a>
+                        <ul class="l2">
+                            <li>내정보변경</li>
+                            <li>검색히스토리</li>
+                          
+                        </ul>
+                    </li>
+                    <li> <a href="#">커뮤니티</a>
+                        <ul class="l2">
+                            <li>공지사항</li>
+                            <li>자유게시판</li>
+                            <li>묻고답하기</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사이트소개</a>
+                        <ul class="l2">
+                        <li>이용안내</li>
+                        <li>데이터출처</li>
+                        <li>사이트맵</li>
+                        </ul>
+                    </li>
+                                      
+                </ul>
+            </div>
+        </div>
+        <hr>     
+       <div class = "main">
+
+       </div>
+       <hr>   
+      
+
+    
+    
+  
+</body>
+<footer class="tail_group_main">
+    <div class="container">
+            <h4><a href="#">치킨 상권 분석</a></h4>
+        <div class="site_info">
+            <div>
+                            <p><span>저작권 정책 : <a href="#">책임의 한계와 법적 고지</a></span>&nbsp
+                                <span>데이터 업데이트 : 2022년07월 13일</span> <br>
+                                <p><span><a href="#">개인정보처리방침</a></span>&nbsp
+                                <span>E-mail : <a href="mailto:sparklep519@naver.com">sparklep519@naver.com</a></span></p>
+                            <p><span></span></p>
+                            <p><b>서울특별시에서 제공하는 상권정보는 참고 사항이며, 사실과 차이가 있을 수 있고 지연될 수 있습니다.<br>
+                                서울특별시는 제공된 정보에 의한 투자결과에 대한 법적인 책임을 지지 않습니다.</b></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
