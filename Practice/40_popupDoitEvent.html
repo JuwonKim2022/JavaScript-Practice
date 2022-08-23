@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>이벤트 공지</title>
+</head>
+<body>	
+	<div id="container">
+		<h1>이벤트 공지</h1>
+		<img src="images/doit.jpeg" alt="">
+		<p><a href="40_popupDoitMain.html" onclick="loadURL(this.href);return false">자세히 보기</a></p>
+	</div>
+	<script>
+		function loadURL(url){
+			window.creator.location = url;
+			window.close();
+		}
+	</script>
+</body>
+</html>
